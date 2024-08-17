@@ -1,0 +1,1 @@
+This is a simple demo project built using HTML and CSS. It showcases basic web development concepts, including layout design, styling, and responsive design principles. The project serves as a foundational example for beginners looking to learn or improve their skills in front-end development.
