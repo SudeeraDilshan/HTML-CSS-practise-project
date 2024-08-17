@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.row1 {
+    flex: 5%;
+}
+
+.row2 {
+    flex: 5%;
+}
+
+.row3 {
+    flex: 85%;
+}
+
+.row4 {
+    flex: 5%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    text-shadow: 1px 1px 3px red;
+}
+
+.header .logo {
+    flex: 10%;
+}
+
+.header img {
+    width: 75px;
+    height: 75px;
+    margin-left: 15px;
+}
+
+.header .hotel-name {
+    flex: 90%;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.nav .navbar {
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style-type: none;
+    height: 100%;
+    padding: 10px;
+}
+
+.nav .navbar li a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+
+}
+
+.nav .navbar li a:hover {
+    font-weight: 500px;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.content .map{
+    position: absolute;
+    top:35%;
+    right: 40%;
+    left:  35%;
+    
+}
+
+.content .map iframe{border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);}
+.footer {
+    padding: 10px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.nav .navbar li:hover {
+    font-weight: 500px;
+    background-color: rgb(249, 248, 245);
+}
+
+.nav .navbar li:hover a {
+    color: #000;
+}
+
+@media screen and (max-width:600px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav .navbar li a {
+        display: inline-block;
+        padding: 5px;
+    }
+
+ .content .map {
+     position: absolute;
+     top: 55%;
+     left: 0%;
+ }
+
+    .header {
+        flex-direction: column;
+    }
+
+}
